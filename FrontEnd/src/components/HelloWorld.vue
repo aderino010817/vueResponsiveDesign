@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Bottom from './Bottom.vue';
+
 
 </script>
 
@@ -28,6 +30,7 @@
         </div>
       </div>
     </div>
+    <Bottom/>
   </div>
 </template>
 
@@ -137,6 +140,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: yellow;
 }
 
 .split70 .kedua {
