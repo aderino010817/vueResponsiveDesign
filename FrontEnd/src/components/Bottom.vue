@@ -17,12 +17,31 @@
     </div>
   </div>
   <div class="blankWhite">.
-    <div class="justred">red</div>
+    <div class="goRow">
+        <div class="justred">
+            red
+        </div>
+        <img class="image" src="../assets/Image/FIGHTING.png" />
+    </div>
     <div class="whiteRed">.</div>
   </div>
 </div>
 </template>
 <style>
+
+.image {
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
+    margin-top: -1em;
+    margin-right: -4em;
+    
+}
+
+.goRow {
+    display: flex;
+    flex-direction: row;
+}
 
 .justred {
     color: red;
@@ -37,11 +56,13 @@
 .whiteRed {
     background-color: red;
     color: red;
-    margin-top: 1em;
+    margin-top: -3em;
     margin-left: 2em;
     width: 40px;
 }
 .blankWhite {
+    display: flex;
+    flex-direction: column;
     color: white;
     background-color: white;
 }
