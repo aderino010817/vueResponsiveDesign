@@ -1,0 +1,76 @@
+// ERD Test#01
+function generatePattern(n) {
+  for (let i = 1; i <= n; i++) {
+    let pattern = '';
+    for (let j = 1; j <= n; j++) {
+      if (j <= i) {
+        pattern += j;
+      } else {
+        pattern += '*';
+      }
+    }
+    for (let k = i + 1; k <= n + 1; k++) {
+      pattern += k;
+    }
+    console.log(pattern)
+  }
+}
+
+generatePattern(5);
+
+generatePattern(4);
+
+//////////////////////////////////////////////////selanjutnya
+//ERD TEST #02
+function findMaxDifference(arr) {
+  let theDifference = 0;
+  let minValue = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    const diff = arr[i] - minValue;
+    if (diff > theDifference) {
+      theDifference = diff;
+    }
+    if (arr[i] < minValue) {
+      minValue = arr[i];
+    }
+  }
+
+  return theDifference;
+}
+
+const harga = [10, 7, 5, 8, 11, 9, 1];
+const result = findMaxDifference(harga);
+console.log(result);
+
+//Cypress 
+"mirip seperti Unit Testing dimana penggunaanya adalah untuk memeriksa keadaan segala macam hal yang kita miliki dalam codingan kita"
+
+//Kubernetes
+"Kubernetes adalah platform yang mengusung method mirroring yang sangat berguna untuk maintenance web agar server tidak mudah down dengan cara pembatasan diri lalu melakukan mirroring saat mencapai batas tertentu"
+
+//Class
+"Class adalah kumpulan dari properti dan method yang kita buat untuk kemudian kita panggil sesuai dengan kebutuhan kita"
+
+//Function
+"function adalah sebuah blok kode yang kita buat untuk kemudian kita panggil sesuai dengan kebutuhan kita"
+
+//ORM
+"ORM (Object Relational Mapping) adalah sebuah method bantuan untuk membantu kita menghubungkan database dan integrasinya"
+
+//DevOps
+"DevOps adalah posisi orang yang bekerja untuk membantu Developer khususnya untuk beberapa metodologi seperti Kubernetes, Dockering, dll"
+
+//Docker
+"Docker adalah pembungkusan codingan kita agar tidak mudah dibaca pihak luar untuk kemudian menggunakan codingan kita dalam kegiatan Deployment khususnya CI/CD dan sangat membantu saat perusahaan mulai bergerak dengan MicroServices"
+
+//3Architecture Application di Era Sekarang
+"3Architecture yang bagus dan modern khususnya di era sekarang antara lain MicroServices, Object Relational Mapping, Kubernetes, etc"
+
+
+// QUERY
+//table A = UserId(wildan, zaki), age(27,25)
+//Table B = item(notebook,bag , notebook, bag, mobilePhone), userId(wildan, wildan, zaki, zaki, zaki)
+
+//Result_1 = Select item from table A 
+//Result_2 = Select userId from table A Left Join Table B on A.userId = B.userId
