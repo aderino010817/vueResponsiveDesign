@@ -137,7 +137,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: yellow;
 }
 
 .split70 .kedua {
