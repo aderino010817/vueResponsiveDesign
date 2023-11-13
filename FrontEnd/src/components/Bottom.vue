@@ -32,7 +32,7 @@
 .image {
     width: 60px;
     height: 60px;
-    margin-left: 300px;
+    margin-left: 180px;
     margin-top: -1em;
     margin-right: -4em;
     
@@ -56,7 +56,6 @@
 .whiteRed {
     background-color: red;
     color: red;
-    margin-top: -3em;
     margin-left: 2em;
     width: 40px;
 }
@@ -111,5 +110,21 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 840px) {
+    .image {
+    width: 60px;
+    height: 60px;
+    margin-left: 140px;
+    margin-top: -1em;
+    margin-right: -4em;
+}
+}
+
+@media only screen and (max-width: 730px) {
+    .primaryContainer {
+    display: none;
+}
 }
 </style>
